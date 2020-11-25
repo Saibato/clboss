@@ -185,6 +185,10 @@ libclboss_la_SOURCES = \
 	Boss/Mod/PeerCompetitorFeeMonitor/Main.hpp \
 	Boss/Mod/PeerCompetitorFeeMonitor/Surveyor.cpp \
 	Boss/Mod/PeerCompetitorFeeMonitor/Surveyor.hpp \
+	Boss/Mod/PeerComplaintsDesk/Main.cpp \
+	Boss/Mod/PeerComplaintsDesk/Main.hpp \
+	Boss/Mod/PeerComplaintsDesk/Recorder.cpp \
+	Boss/Mod/PeerComplaintsDesk/Recorder.hpp \
 	Boss/Mod/PeerMetrician.cpp \
 	Boss/Mod/PeerMetrician.hpp \
 	Boss/Mod/PeerStatistician.cpp \
@@ -260,6 +264,7 @@ libclboss_la_SOURCES = \
 	Boss/Msg/ProvideHtlcAcceptedDeferrer.hpp \
 	Boss/Msg/ProvideStatus.hpp \
 	Boss/Msg/ProvideSwapQuotation.hpp \
+	Boss/Msg/RaisePeerComplaint.hpp \
 	Boss/Msg/ReleaseHtlcAccepted.hpp \
 	Boss/Msg/RequestChannelCreation.hpp \
 	Boss/Msg/RequestConnect.hpp \
@@ -287,6 +292,7 @@ libclboss_la_SOURCES = \
 	Boss/Msg/SolicitChannelFeeModifier.hpp \
 	Boss/Msg/SolicitConnectCandidates.hpp \
 	Boss/Msg/SolicitHtlcAcceptedDeferrer.hpp \
+	Boss/Msg/SolicitPeerComplaints.hpp \
 	Boss/Msg/SolicitStatus.hpp \
 	Boss/Msg/SolicitSwapQuotation.hpp \
 	Boss/Msg/StatusListpays.hpp \
@@ -469,6 +475,7 @@ TESTS = \
 	tests/boss/test_needsconnectsolicitor \
 	tests/boss/test_onchainfeemonitor_samples_init \
 	tests/boss/test_peerstatistician \
+	tests/boss/test_peercomplaintsdesk_recorder \
 	tests/boss/test_reqresp \
 	tests/boss/test_rpc \
 	tests/boss/test_swapmanager \
